@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: initial;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  font-size: calc(100vw / 1440 * 16);
+}
+
+body {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  background: #e5e0de;
+}
+
+header {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 20px 0px;
+  z-index: 7;
+}
+
+header nav {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.54);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+header nav ul li img {
+  width: 3.5rem;
+}
+
+header nav ul li button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  background: #ffcd6d;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: inherit;
+}
+
+.container_wrap {
+  height: 400vh;
+  position: relative;
+}
+
+.container_wrap canvas {
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.container_wrap .content {
+  z-index: 2;
+  width: 100%;
+  top: 4%;
+  position: absolute;
+  text-align: center;
+  font-family: "inter";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 80rem;
+}
+
+.container_wrap .content h1 {
+  font-size: 6.3rem;
+  font-family: Noi;
+  line-height: 6.1rem;
+  font-weight: 500;
+  letter-spacing: -3px;
+}
+
+.container_wrap .content p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.container_wrap .content .deew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: Noi;
+  src: url(/public/NoiGroteskTrial-Regular.ttf);
+}
+/*# sourceMappingURL=style.css.map */
